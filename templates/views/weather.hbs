@@ -60,15 +60,15 @@
         const temp_status = document.getElementById("temp_status");
         const datahide = document.querySelector(".middle-layer");
 
-            {{!-- const getCurrentDay = () =>{
+            const getCurrentDay = () =>{
             var weekday = new Array(7);
-            weekday[0] = Sunday;
-            weekday[1] = Monday;
-            weekday[2] = Tuesday;
-            weekday[3] = Wednesday;
-            weekday[4] = Thursday;
-            weekday[5] = Friday;
-            weekday[6] = Saturday;
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
 
             let currentTime = new Date();
             today = weekday[currentTime.getDay()];
@@ -76,7 +76,28 @@
             day.innerText = today;
         }
 
-        getCurrentDay();  --}}
+        getCurrentDay(); 
+
+        const dateMonth = ()=>{
+            var month = new Array(11);
+            month[0] = "Jan";
+            month[1] = "Feb";
+            month[2] = "Mar";
+            month[3] = "Apr";
+            month[4] = "May";
+            month[5] = "Jun";
+            month[6] = "July";
+            month[7] = "Aug";
+            month[8] = "Sep";
+            month[9] = "Oct";
+            month[10] = "Nov";
+            month[11] = "Dec";
+            let currentMonth = new Date();
+            let todayDate = document.getElementById("todayDate");
+            todayDate.innerText = `${currentMonth.getDate()} ${month[currentMonth.getMonth()]}`
+        } 
+
+        dateMonth();
 
         const getInfo = async (event) => {
             event.preventDefault();

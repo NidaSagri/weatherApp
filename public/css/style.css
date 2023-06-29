@@ -243,6 +243,10 @@ footer p{
     color: #fff;
 }
 
+.main-layer #city_name{
+    padding: 3rem;
+}
+
 .main-layer .middle-layer p{
     font-size: 7rem;
     font-weight: 900;
